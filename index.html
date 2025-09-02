@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exceptional Personal Style | Bespoke Wardrobe Services</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="nav-brand">AQUIMODA</div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#booking">Book a Call</a></li>
+        <li><a href="#services">Our Services</a></li>
+        <li><a href="#about">About Us</a></li>
+      </ul>
+    </nav>
+    <!-- Hero Section -->
+    <section class="hero">
+      <script>
+        // Navbar hamburger toggle
+        document.addEventListener("DOMContentLoaded", function () {
+          const navToggle = document.getElementById("navToggle");
+          const navLinks = document.getElementById("navLinks");
+          navToggle.addEventListener("click", function () {
+            navLinks.classList.toggle("nav-active");
+          });
+        });
+      </script>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1 class="hero-title">
+          Exceptional access<br />
+          to personal style
+        </h1>
+        <p class="hero-subtitle">Because style is personal</p>
+        <button class="cta-button" onclick="scrollToBooking()">
+          Book a Call
+        </button>
+      </div>
+    </section>
+
+    <!-- Appointment Booking Section -->
+    <section class="booking-section" id="booking">
+      <div class="container">
+        <h2 class="booking-title">Book an Appointment</h2>
+        <form class="booking-form" id="appointmentForm">
+          <div class="form-row">
+            <div class="form-group">
+              <input
+                type="text"
+                id="fullName"
+                name="fullName"
+                placeholder="Full Name"
+                required
+              />
+              <div class="form-underline"></div>
+            </div>
+            <div class="form-group">
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Phone"
+                required
+              />
+              <div class="form-underline"></div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <input
+              type="text"
+              id="datetime"
+              name="datetime"
+              placeholder="Preferred Appointment Date & Time"
+              required
+            />
+            <div class="form-underline"></div>
+            <div class="calendar-icon">📅</div>
+          </div>
+
+          <div class="form-group">
+            <select id="service" name="service" required>
+              <option value="">Service Interest</option>
+              <option value="personal">Personal Styling</option>
+              <option value="seasonal">Seasonal Wardrobe</option>
+              <option value="vip">VIP Experience</option>
+              <option value="consultation">Style Consultation</option>
+            </select>
+            <div class="form-underline"></div>
+            <div class="dropdown-arrow">▼</div>
+          </div>
+
+          <button type="submit" class="confirm-button">
+            Confirm Appointment
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section">
+      <div class="container">
+        <h2 class="services-title">Bespoke Wardrobe Services</h2>
+        <div class="services-grid">
+          <div class="service-card" data-service="personal">
+            <div class="service-image">
+              <img src="assets/img44.jpg" alt="Personal Styling Service" />
+              <div class="service-overlay"></div>
+            </div>
+            <h3 class="service-name">Personal Shopper</h3>
+            <a href="https://wa.me/447551257959" target="_blank">
+              <button class="service-chat-btn">
+                Chat with a private shopper
+              </button>
+            </a>
+          </div>
+
+          <div class="service-card" data-service="seasonal">
+            <div class="service-image">
+              <img src="assets/img66.jpg" alt="Seasonal Wardrobe Service" />
+              <div class="service-overlay"></div>
+            </div>
+            <h3 class="service-name">Seasonal Capsule</h3>
+            <a href="https://wa.me/447551257959" target="_blank">
+              <button class="service-chat-btn">
+                Chat with a style advisor
+              </button>
+            </a>
+          </div>
+
+          <div class="service-card" data-service="vip">
+            <div class="service-image">
+              <img src="assets/img55.jpg" alt="VIP Styling Service" />
+              <div class="service-overlay"></div>
+            </div>
+            <h3 class="service-name">VIP Wardrobe</h3>
+            <a href="https://wa.me/447551257959" target="_blank">
+              <button class="service-chat-btn">
+                Chat with a wardrobe manager
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="about-container">
+      <!-- Text Section -->
+      <div class="text-section">
+        <h2>Unlock High Service</h2>
+        <p>
+          Discover your unique signature style, through our bespoke wardrope
+          services.
+        </p>
+      </div>
+
+      <!-- Image Section -->
+      <div class="image-box">
+        <img src="assets/img33.jpg" alt="AQUIMODA Illustration" />
+      </div>
+    </div>
+
+    <div class="footer-section">
+      <div class="footer-logo">
+        <img src="/assets/Logomark.png" />
+      </div>
+      <div class="footer-text">
+        <h6>Because style is personal</h6>
+
+        <p>
+          <a href="mailto:info@aquimodalondon.com">info@aquimodalondon.com</a>
+        </p>
+      </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div class="modal" id="successModal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h3>Appointment Confirmed!</h3>
+        <p>
+          Thank you for booking with us. We'll contact you shortly to confirm
+          your appointment details.
+        </p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
