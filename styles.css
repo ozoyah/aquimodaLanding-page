@@ -635,6 +635,21 @@ html,
   color: white;
 }
 
+.fa-envelope {
+  color: #e9b994;
+  margin-right: 8px;
+}
+
+.fa-globe {
+  color: #e9b994;
+  margin-right: 8px;
+}
+
+.fa-instagram {
+  color: #e9b994;
+  margin-right: 8px;
+}
+
 /* Modal */
 .modal {
   display: none;
