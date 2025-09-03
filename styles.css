@@ -310,19 +310,17 @@ html,
 }
 
 .confirm-button {
-  background: #e9b994;
-  border: 1px solid white;
-  color: #165a41;
+  background: #165a41;
+  border: 2px solid #e9b994;
+  color: white;
   padding: 15px 40px;
   font-size: 1.1rem;
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: 1px;
   cursor: pointer;
   transition: all 0.3s ease;
   opacity: 0;
   animation: fadeInUp 1s ease-out 1.1s forwards;
-
-  margin: 0 auto;
 }
 
 .confirm-button:hover {
