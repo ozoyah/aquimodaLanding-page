@@ -291,6 +291,7 @@ html,
 
 .form-group input::placeholder {
   color: #165a41;
+  font-size: 1.1rem;
   font-weight: 300;
 }
 
@@ -338,8 +339,8 @@ html,
 }
 
 .services-title {
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 1.8rem;
+  font-weight: 400;
   text-align: center;
   margin-bottom: 20px;
   color: white;
@@ -485,7 +486,7 @@ html,
 
 .service-content h3 {
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 500;
   margin-bottom: 10px;
   color: #e9b994;
 }
@@ -504,6 +505,12 @@ html,
 
 /* Responsive for mobile */
 @media (max-width: 900px) {
+  .navbar {
+    padding: 20px 14px;
+  }
+  .nav-brand img {
+    margin-left: -1px;
+  }
   .services {
     flex-direction: column;
   }
@@ -513,7 +520,7 @@ html,
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 200px;
+  gap: 100px;
   background-color: #f5efe7;
   padding: 20px 40px;
   width: 100%;
@@ -556,10 +563,11 @@ html,
     gap: 18px;
   }
   .text-section h2 {
-    font-size: 1.3rem;
+    font-size: 1.8rem;
+    font-weight: 500;
   }
   .text-section p {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
   .image-box img {
     width: 120px;
@@ -574,15 +582,15 @@ html,
 }
 
 .text-section h2 {
-  font-size: 18pcrem;
+  font-size: 1.8rem;
   text-align: center;
-  font-weight: bold;
+  font-weight: 500;
   margin: 0 0 10px;
   color: #165a41;
 }
 
 .text-section p {
-  font-size: 14px;
+  font-size: 1.1;
   font-weight: 500;
   margin: 0;
   text-align: center;
@@ -593,6 +601,15 @@ html,
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.video-section video {
+  width: 300px;
+  height: 260px;
+  border: 1px solid #e9b994;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 4px;
 }
 
 .image-box img {
@@ -625,6 +642,11 @@ html,
   font-weight: medium;
 }
 
+.footer-logo-text img {
+  width: 150px;
+  color: white;
+}
+
 .footer-logo img {
   width: 80px;
   color: white;
@@ -643,6 +665,11 @@ html,
 .fa-instagram {
   color: #e9b994;
   margin-right: 8px;
+}
+
+.fa-whatsapp {
+  color: #e9b994;
+  margin-right: 3px;
 }
 
 /* Modal */

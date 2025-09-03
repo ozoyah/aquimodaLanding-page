@@ -15,20 +15,28 @@ document.addEventListener("DOMContentLoaded", function () {
   form.addEventListener("submit", function (e) {
     e.preventDefault();
 
-    // Get form data
     const formData = new FormData(form);
     const data = Object.fromEntries(formData);
 
-    // Simple validation
     if (validateForm(data)) {
-      // Show success modal
-      modal.style.display = "block";
-
-      // Reset form
-      form.reset();
-
-      // Log data (in real app, this would be sent to server)
-      console.log("Appointment booked:", data);
+      fetch(form.action, {
+        method: "POST",
+        body: formData,
+        headers: {
+          Accept: "application/json",
+        },
+      })
+        .then((response) => {
+          if (response.ok) {
+            modal.style.display = "block";
+            form.reset();
+          } else {
+            alert("There was a problem submitting your form.");
+          }
+        })
+        .catch(() => {
+          alert("There was a problem submitting your form.");
+        });
     }
   });
 
