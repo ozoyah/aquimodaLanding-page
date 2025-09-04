@@ -375,7 +375,7 @@ html,
 .service-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: center;
   transition: transform 0.3s ease;
 }
 
@@ -643,13 +643,17 @@ html,
 }
 
 .footer-logo-text img {
-  width: 150px;
+  width: 60%;
   color: white;
 }
 
 .footer-logo img {
   width: 80px;
   color: white;
+}
+
+.whatsApp {
+  margin-top: 10px;
 }
 
 .fa-envelope {
