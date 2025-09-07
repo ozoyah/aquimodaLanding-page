@@ -629,10 +629,14 @@ html,
   text-align: center;
   color: white;
   background-color: #165a41;
-  padding: 8px;
+  padding: 7px;
+  position: relative;
 }
 
 .footer-text {
+  margin-top: 0;
+  position: relative;
+  bottom: 20px;
   font-size: 14px;
 }
 
@@ -643,7 +647,9 @@ html,
 }
 
 .footer-logo-text img {
-  width: 60%;
+  position: relative;
+  bottom: 30px;
+  width: 70%;
   color: white;
 }
 
