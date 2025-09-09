@@ -356,7 +356,8 @@ html,
 
 .service-card {
   position: relative;
-  /* aspect-ratio: 3/4; */
+  min-height: 380px;
+  max-width: 100%;
   overflow: hidden;
   cursor: pointer;
   transition: transform 0.3s ease;
