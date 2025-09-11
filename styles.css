@@ -291,7 +291,6 @@ html,
 
 .form-group input::placeholder {
   color: #165a41;
-  font-size: 1.1rem;
   font-weight: 300;
 }
 
@@ -339,8 +338,8 @@ html,
 }
 
 .services-title {
-  font-size: 1.8rem;
-  font-weight: 400;
+  font-size: 18px;
+  font-weight: 500;
   text-align: center;
   margin-bottom: 20px;
   color: white;
@@ -487,7 +486,7 @@ html,
 
 .service-content h3 {
   font-size: 18px;
-  font-weight: 500;
+  font-weight: bold;
   margin-bottom: 10px;
   color: #e9b994;
 }
@@ -548,12 +547,17 @@ html,
     flex-direction: column;
   }
 }
+@media (max-width: 900px) {
+  .services {
+    flex-direction: column;
+  }
+}
 
 .about-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 100px;
+  gap: 200px;
   background-color: #f5efe7;
   padding: 20px 40px;
   width: 100%;
@@ -629,11 +633,10 @@ html,
     gap: 18px;
   }
   .text-section h2 {
-    font-size: 1.8rem;
-    font-weight: 500;
+    font-size: 1.3rem;
   }
   .text-section p {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   .image-box img {
     width: 120px;
@@ -648,15 +651,15 @@ html,
 }
 
 .text-section h2 {
-  font-size: 1.8rem;
+  font-size: 18pcrem;
   text-align: center;
-  font-weight: 500;
+  font-weight: bold;
   margin: 0 0 10px;
   color: #165a41;
 }
 
 .text-section p {
-  font-size: 1.1;
+  font-size: 14px;
   font-weight: 500;
   margin: 0;
   text-align: center;
@@ -741,11 +744,6 @@ html,
 .fa-instagram {
   color: #e9b994;
   margin-right: 8px;
-}
-
-.fa-whatsapp {
-  color: #e9b994;
-  margin-right: 3px;
 }
 
 /* Modal */
